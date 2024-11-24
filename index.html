@@ -14,54 +14,141 @@
     <article><time datetime="" id="current-date"></time></article>
 </header>
 <main>
-    <section id="mood-tracker">
-        <h2>Mood</h2>
-        <article id="mood">
+    <form action="">
+        <section id="mood-tracker">
+            <h2>Mood</h2>
+            <article id="mood">
+                <ul>
+                    <li><input type="radio" name="mood" id="sad"><img src="assets/img/icons/smileys/sad.png" alt="sad smiley"></li>
+                    <li><input type="radio" name="mood" id="mweh"><img src="assets/img/icons/smileys/meh.png" alt="mweh smiley"></li>
+                    <li><input type="radio" name="mood" id="neutral"><img src="assets/img/icons/smileys/straight.png" alt="neutral smiley"></li>
+                    <li><input type="radio" name="mood" id="okay"><img src="assets/img/icons/smileys/ok.png" alt="ok smiley"></li>
+                    <li><input type="radio" name="mood" id="happy"><img src="assets/img/icons/smileys/very-happy.png" alt="happy smiley"></li>
+                </ul>
+            </article>
+            <article id="mood-notes">
+                <h3>notes...</h3>
+                <textarea name="mood-notes" id="text-mood-notes"></textarea>
+            </article>
+        </section>
+        <section id="emotions">
+            <section>
+                <input type="checkbox" id="happy" name="">
+                <label for="happy">blij</label>
+            </section>
+            <section>
+                <input type="checkbox" id="amused" name="">
+                <label for="amused">geamuseerd</label>
+            </section>
+            <section>
+                <input type="checkbox" id="proud" name="">
+                <label for="proud">trots</label>
+            </section>
+            <section>
+                <input type="checkbox" id="content" name="">
+                <label for="content">tevreden</label>
+            </section>
+            <section>
+                <input type="checkbox" id="sad" name="">
+                <label for="sad">verdrietig</label>
+            </section>
+            <section>
+                <input type="checkbox" id="discomfort" name="">
+                <label for="discomfort">ongemak</label>
+            </section>
+            <section>
+                <input type="checkbox" id="bored" name="">
+                <label for="bored">verveeld</label>
+            </section>
+            <section>
+                <input type="checkbox" id="jealous" name="">
+                <label for="jealous">jaloers</label>
+            </section>
+            <section>
+                <input type="checkbox" id="angry" name="">
+                <label for="angry">boos</label>
+            </section>
+            <section>
+                <input type="checkbox" id="furious" name="">
+                <label for="furious">woedend</label>
+            </section>
+            <section>
+                <input type="checkbox" id="confused" name="">
+                <label for="confused">verward</label>
+            </section>
+            <section>
+                <input type="checkbox" id="frustrated" name="">
+                <label for="frustrated">gefrustreerd</label>
+            </section>
+            <section>
+                <input type="checkbox" id="anxious" name="">
+                <label for="anxious">bang</label>
+            </section>
+            <section>
+                <input type="checkbox" id="rejected" name="">
+                <label for="rejected">afgewezen</label>
+            </section>
+            <section>
+                <input type="checkbox" id="lonely" name="">
+                <label for="lonely">eenzaam</label>
+            </section>
+            <section>
+                <input type="checkbox" id="tired" name="">
+                <label for="tired">moe</label>
+            </section>
+            <section>
+                <input type="checkbox" id="extraemotion-1" name="extra-emotion-1">
+                <input type="text" id="extra-emotion-1">
+            </section>
+            <section>
+                <input type="checkbox" id="extraemotion-2" name="extra-emotion-2">
+                <input type="text" id="extra-emotion-2">
+            </section>
+            <section>
+                <input type="checkbox" id="extraemotion-3" name="extra-emotion-3">
+                <input type="text" id="extra-emotion-3">
+            </section>
+            <section>
+                <input type="checkbox" id="extraemotion-4" name="extra-emotion-4">
+                <input type="text" id="extra-emotion-4">
+            </section>
+        
+        </section>
+        <section id="habit-tracker">
+        </section>
+        <section id="energy-tracker">
             <ul>
-                <li><input type="radio" name="mood" id="sad"><img src="assets/img/icons/smileys/sad.png" alt="sad smiley"></li>
-                <li><input type="radio" name="mood" id="mweh"><img src="assets/img/icons/smileys/meh.png" alt="mweh smiley"></li>
-                <li><input type="radio" name="mood" id="neutral"><img src="assets/img/icons/smileys/straight.png" alt="neutral smiley"></li>
-                <li><input type="radio" name="mood" id="okay"><img src="assets/img/icons/smileys/ok.png" alt="ok smiley"></li>
-                <li><input type="radio" name="mood" id="happy"><img src="assets/img/icons/smileys/very-happy.png" alt="happy smiley"></li>
+                <li>very low</li>
+                <li>low</li>
+                <li>neutral</li>
+                <li>high</li>
+                <li>very high</li>
             </ul>
-        </article>
-        <article id="mood-notes">
-            <h3>notes...</h3>
-        </article>        
-    </section>
-    <section id="emotions">
-
-    </section>
-    <section id="habit-tracker">
-
-    </section>
-    <section id="energy-tracker">
-        <ul>
-            <li>very low</li>
-            <li>low</li>
-            <li>neutral</li>
-            <li>high</li>
-            <li>very high</li>
-        </ul>
-    </section>
-    <figure id="decoration-image">
-        <img src="" alt="">
-    </figure>
-    <section id="stress-tracker">
-        <ul>
-            <li>very low</li>
-            <li>low</li>
-            <li>neutral</li>
-            <li>high</li>
-            <li>very high</li>
-        </ul>
-    </section>
-    <section id="good-things">
-
-    </section>
-    <section id="bad-things">
-
-    </section>
+        </section>
+        <section id="figure">
+            <figure id="decoration-image">
+                <img src="" alt="">
+            </figure>
+            <article id="quote">
+                <blockquote id="quoteOfTheDay"></blockquote>
+            </article>
+        </section>
+        <section id="stress-tracker">
+            <ul>
+                <li>very low</li>
+                <li>low</li>
+                <li>neutral</li>
+                <li>high</li>
+                <li>very high</li>
+            </ul>
+        </section>
+        <section id="good-things">
+            <textarea name="" id="text-good-things"></textarea>
+        </section>
+        <section id="bad-things">
+            <textarea name="" id="text-bad-things"></textarea>
+        </section>
+    </form>
 </main>
 <footer><a href="https://www.flaticon.com/free-icons/laughing" title="laughing icons">Laughing icons created by Freepik - Flaticon</a></footer>
 
